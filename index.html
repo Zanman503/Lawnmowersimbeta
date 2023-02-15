@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lawnmower Game</title>
+        <script type="text/javascript" src="app.js"></script>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+        
+     
+    </head>
+    
+    <body>
+        <FONT COLOR=white>
+        <body style="background-color:black;">
+    
+            <h1>LawnMower Sim</h1>
+            
+        <p id="desc">Wow This Lawn Grows Fast</p>
+        <canvas id="lawn" width=500 height=500>Canvas goes here</canvas>
+        <p id="money">$0</p>
+        <p id="totalMowed">Total Grass Mowed: 0</p>
+        <p id="superTicks"></p>
+        <div id="area">
+            <p></p>
+            <button id="upgradetickRate" onclick="upgrade('tickRate')">Farmers - $5</button>
+            <span id="texttickRate">Current: 1000 ms</span>
+            <p></p>
+            <button id="upgradegrowthRate" onclick="upgrade('growthRate')">Fertilizer - $10</button>
+            <span id="textgrowthRate">Current: 4 tiles/tick</span>
+            <p></p>
+            <button id="upgrademachineSpeed" onclick="upgrade('machineSpeed')">Machinery - $50</button>
+            <span id="textmachineSpeed">Current: 1 tile/tick</span>
+            <p></p>
+            <button id="upgrademachineSize" onclick="upgrade('machineSize')">Machine speed - $75</button>
+            <span id="textmachineSize">Current: 1x1</span>
+            <p></p>
+            <button id="upgradetileSize" onclick="upgrade('tileSize')">Land - $75</button>
+            <span id="texttileSize">Current: 20x20</span>
+        </div>
+        <p></p>
+        <button onclick="previous()"><</button>
+        <button id="unlock" onclick="unlockNext()">Unlock for $1000000</button>
+        <button onclick="next()">></button>
+        <div id="prestige">
+            <p id="mulch">Mulch: 0</p>
+            <button id="prestigeButton" onclick="attemptPrestige()">Prestige for 0 Mulch</button>
+            <p id="valueBonus">Current Value Bonus: 0%</p>
+            <p id="growthBonus">Current Growth Bonus: 0</p>
+            
+      
+        <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+            </style>
+
+</head>
+<body>
+
+
+
+
+
+ 
+
+        </div>
+        
+    </body>
+ 
+        
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+</html>
